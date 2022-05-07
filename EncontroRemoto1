@@ -1,5 +1,5 @@
 // Se a peça possuir mais de 100 gramas pode cadastrar;
-// dada a capacidade de cada caixa, caso a lista de peça seja superior a 10, imprimir menssagem de erro com a mensagem Informando não ter cadacidade suficiente;
+// dada a capacidade de cada caixa, caso a lista de peça seja superior a 10, imprimir menssagem de erro com a mensagem Informando não ter capacidade suficiente;
 // caso a peça tenha nome com quantidade inferior a 3 caracteres, informe uma mensagem de erro.
 
 let entrada1 = require("readline-sync");
