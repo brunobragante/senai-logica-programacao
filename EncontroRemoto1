@@ -1,0 +1,34 @@
+// Se a peça possuir mais de 100 gramas pode cadastrar;
+// dada a capacidade de cada caixa, caso a lista de peça seja superior a 10, imprimir menssagem de erro com a mensagem Informando não ter cadacidade suficiente;
+// caso a peça tenha nome com quantidade inferior a 3 caracteres, informe uma mensagem de erro.
+
+let entrada1 = require("readline-sync");
+
+let peso = entrada1.question("Qual o peso, em gramas, da peça?");
+
+if(peso >= 100){
+    console.log ("Peça tem peso suficiente para cadastrar");
+
+} else {
+    console.log ("Peça sem peso suficiente para cadastro");
+}
+
+let entrada2 = require("readline-sync");
+
+let listaPeças = entrada2.question("Qual a quantidade de peças?");
+
+if(listaPeças >= 10){
+    console.log("A lista está full, sem espaço");
+} else {
+    console.log("Peça pode ser cadastrada!");
+}
+
+let entrada3 = require("readline-sync");
+
+let nomePeça = entrada3.question("Qual o nome da peça?");
+
+if(nomePeça.lenght < 3){
+    console.log("Nome deve possuir no mínimo 3 caracteres");
+}
+
+console.log("cadastro efetivado");
